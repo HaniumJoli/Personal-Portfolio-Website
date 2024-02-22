@@ -53,7 +53,6 @@ body {
 .container-profile {
   position: relative;
   width: 100%;
-  height: 100vh;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -94,7 +93,6 @@ body {
   width: 60%;
   min-width: 60%;
   justify-content: space-between;
-  height: 100%;
   /* background: url(prof.jpeg) no-repeat;
   background-size: cover;
   background-position: center; */
@@ -174,6 +172,7 @@ body {
 }
 .about {
   display: grid;
+  margin-top: 4rem;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
@@ -403,7 +402,7 @@ section {
   -moz-transform: translate(-50%, -50%) rotate(-90deg);
   -ms-transform: translate(-50%, -50%) rotate(-90deg);
   -o-transform: translate(-50%, -50%) rotate(-90deg);
-  transform: translate(-50%, -50%) rotate(-90deg); 
+  transform: translate(-50%, -50%) rotate(-90deg);
   width: 120px;
   height: 160px;
 }
