@@ -10,9 +10,16 @@ body {
     background-color: #081c29;
 }
 .wrapper {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    padding: 6rem 0 2rem 0;
 }
+
 .header {
     height: 5rem;
     position: fixed;
@@ -20,7 +27,6 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 5%;
-    background: #081c29;
     background: #06263b;
     display: flex;
     justify-content: space-between;
@@ -72,11 +78,6 @@ body {
     color: aqua;
 }
 
-.wrapper {
-    z-index: 1;
-    padding: 6rem 5% 5% 5%;
-}
-
 section {
     display: flex;
     flex-wrap: wrap;
@@ -85,24 +86,25 @@ section {
 
 .container-profile {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     /* height: 100vh; */
     background-position: center;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     flex-direction: row-reverse;
-    align-items: flex-start;
-    padding-bottom: 2rem;
+    align-items: center;
+    padding: 0 1rem 2rem 1rem;
 }
 
 .profile-photo {
     display: flex;
     position: relative;
-    width: 40%;
-    min-width: 300px;
+    width: 400px;
+    min-width: 250px;
     justify-content: center;
     align-items: center;
-    padding: 2rem 1rem 1rem 0;
+    padding: 2rem 1rem 1rem 1rem;
 }
 
 #profile-pic {
@@ -132,10 +134,11 @@ section {
 
 .home {
     position: relative;
-    width: 60%;
-    min-width: 60%;
+    width: 600px;
+    /* min-width: 400px; */
     /* justify-content: space-between; */
     margin-top: 3rem;
+    padding: 0 1rem;
     /* background: url(prof.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -215,8 +218,6 @@ section {
     box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 25px aqua;
 }
 .btn-box {
-    /*width: 100%;
-    */
     text-align: center;
     display: inline-block;
     padding: 12px 28px;
@@ -255,30 +256,45 @@ section {
     color: aqua;
 }
 .about {
-    display: grid;
+    /* width: 100%; */
     margin-top: 4rem;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.5rem; */
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .about-img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    min-width: 300px;
     padding: 2rem;
 }
 .about-img img {
-    max-width: 630px;
     height: auto;
     width: 80%;
+    min-width: 300px;
+    align-items: center;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border-radius: 10px;
 }
+
+.about-text {
+    width: 50%;
+    min-width: 500px;
+    padding: 1rem;
+}
+
 .about-text h2 {
     font-size: 60px;
 }
@@ -317,12 +333,14 @@ section {
 }
 .services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /* grid-template-rows: repeat(auto-fit, minmax(300px, 1fr)); */
     grid-gap: 4rem;
 }
 
 .services-list div {
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
     padding: 40px;
     font-size: 13px;
@@ -332,10 +350,10 @@ section {
     transition: background-color 0.5s transform 0.5s;
     box-shadow: 1px 1px 20px aqua, 1px 1px 20px aqua, 1px 1px 20px aqua,        1px 1px 20px aqua;
     transition: 0.5s ease-in-out;
-    -webkit-transition: background-color 0.5s transform 0.5s;
-    -moz-transition: background-color 0.5s transform 0.5s;
-    -ms-transition: background-color 0.5s transform 0.5s;
-    -o-transition: background-color 0.5s transform 0.5s;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
 }
 
 .services-list div:hover {
@@ -349,9 +367,11 @@ section {
 }
 
 .read {
-    display:inline-block;
+    width: 120px;
+    display: inline-block;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top: auto;
+    text-align: center;
     background-color: aqua;
     color: #081b29;
     text-decoration: none;
@@ -366,6 +386,10 @@ section {
     -webkit-animation: slideUp 0.5s ease forwards;
     animation: slideUp 0.5s ease forwards;
     animation-delay: 0.8s;
+}
+
+.services-list div p {
+    margin: 20px 0;
 }
 
 .services-list .read:hover {
