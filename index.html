@@ -20,15 +20,124 @@
     </head>
     <body>
         <header class="header">
-            <a href="#" class="logo">Hanium</a>
             <nav class="navbar">
-                <a class="navitem" style="--i: 1" class="active" href="#">Home</a>
-                <a class="navitem" style="--i: 2" href="#about">About</a>
-                <a class="navitem" style="--i: 3" href="#services">Services</a>
-                <a class="navitem" style="--i: 4" href="#skills-sub">Skills</a>
-                <a class="navitem" style="--i: 5" href="#portfolio">Portfolio</a>
-                <a class="navitem" style="--i: 6" href="#contact">Contact</a>
+                <ul class="sidebar">
+                    <li id="hideSide">
+                        <a>
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="Menu / Close_MD">
+                                    <path
+                                        id="Vector"
+                                        d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
+                                        stroke="#ffffff"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    ></path>
+                                </g>
+                            </g>
+                        </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a style="--i: 1" class="active" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a style="--i: 2" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a style="--i: 3" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a style="--i: 4" href="#skills-sub">Skills</a>
+                    </li>
+                    <li>
+                        <a style="--i: 5" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a style="--i: 6" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav-menu">
+                    <li id="logo">
+                        <a href="#" class="logo">Hanium</a>
+                    </li>
+                    <li class="hideonmobile">
+                        <a
+                            class="navitem"
+                            style="--i: 1"
+                            class="active"
+                            href="#"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="hideonmobile">
+                        <a class="navitem" style="--i: 2" href="#about"
+                            >About</a
+                        >
+                    </li>
+                    <li class="hideonmobile">
+                        <a class="navitem" style="--i: 3" href="#services"
+                            >Services</a
+                        >
+                    </li>
+                    <li class="hideonmobile">
+                        <a class="navitem" style="--i: 4" href="#skills-sub"
+                            >Skills</a
+                        >
+                    </li>
+                    <li class="hideonmobile">
+                        <a class="navitem" style="--i: 5" href="#portfolio"
+                            >Portfolio</a
+                        >
+                    </li>
+                    <li class="hideonmobile">
+                        <a class="navitem" style="--i: 6" href="#contact"
+                            >Contact</a
+                        >
+                    </li>
+                    <li id="showside">
+                        <a>
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            stroke="#000000"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M4 6H20M4 12H20M4 18H20"
+                                    stroke="#ffffff"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </g>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
             </nav>
+            <!-- <div class="hamburger">
+                <i class="bx bx-menu"></i>
+            </div> -->
         </header>
         <div class="wrapper">
             <section class="container-profile">
@@ -50,21 +159,20 @@
                         </p>
                         <div class="home-sci">
                             <a href="#" style="--i: 1"
-                                ><i class="bx bxl-facebook-circle"></i
+                                ><i class="bx bxl-facebook-circle bx-md"></i
                             ></a>
                             <a href="#" style="--i: 2"
-                                ><i class="bx bxl-whatsapp"></i
-                            ></a>
+                                ><i class='bx bxl-whatsapp bx-md'></i></a>
                             <a href="#" style="--i: 3" style="--i: 2"
-                                ><i class="bx bxl-linkedin-square"></i
+                                ><i class="bx bxl-linkedin-square bx-md"></i
                             ></a>
                             <a href="#" style="--i: 4"
-                                ><i class="bx bx-envelope"></i
+                                ><i class="bx bx-envelope bx-md"></i
                             ></a>
                         </div>
                         <div>
                             <a href="#" style="--i: 5" class="btn-box"
-                                >More About Me</a
+                                >Talk to me</a
                             >
                         </div>
                     </div>
@@ -93,7 +201,7 @@
                         am ready to make impactful contributions to the dynamic
                         field of Computer Science and Engineering.
                     </p>
-                    <a href="#" class="btn-box">More About Me</a>
+                    <a href="#" class="btn-box">See my resume</a>
                 </div>
             </section>
             <section>
@@ -101,7 +209,7 @@
                     <div class="container">
                         <h1 class="sub-title">My <span>Services</span></h1>
                         <div class="services-list">
-                            <div style="--i:1">
+                            <div style="--i: 1">
                                 <i
                                     class="bx bx-code-alt"
                                     style="color: #231fb6"
@@ -120,7 +228,7 @@
                                 </p>
                                 <a href="#" class="read">Learn More</a>
                             </div>
-                            <div style="--i:2">
+                            <div style="--i: 2">
                                 <box-icon
                                     name="xing"
                                     type="logo"
@@ -141,7 +249,7 @@
                                 </p>
                                 <a href="#" class="read">Learn More</a>
                             </div>
-                            <div style="--i:3">
+                            <div style="--i: 3">
                                 <box-icon
                                     type="solid"
                                     name="heart-circle"
@@ -166,7 +274,7 @@
                                 </p>
                                 <a href="#" class="read">Learn More</a>
                             </div>
-                            <div style="--i:4">
+                            <div style="--i: 4">
                                 <box-icon
                                     type="solid"
                                     name="adjust-alt"
@@ -191,7 +299,7 @@
 
             <h1 class="sub-title" id="skills-sub">My <span>Skills</span></h1>
             <section id="skills">
-                <div class="container1" >
+                <div class="container1">
                     <h1 class="heading1">Technical Skills</h1>
                     <div class="technical-bars">
                         <div class="bar">
@@ -242,7 +350,12 @@
                     <h1 class="heading1">Professional Skills</h1>
                     <div class="radial-bars">
                         <div class="radial-bar">
-                            <svg class="radial-svg" x="0px" y="0px" viewBox="0 0 200 200">
+                            <svg
+                                class="radial-svg"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 0 200 200"
+                            >
                                 <circle
                                     class="progress-bar"
                                     cx="100"
@@ -260,7 +373,12 @@
                             <div class="text">Creativity</div>
                         </div>
                         <div class="radial-bar">
-                            <svg class="radial-svg" x="0px" y="0px" viewBox="0 0 200 200">
+                            <svg
+                                class="radial-svg"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 0 200 200"
+                            >
                                 <circle
                                     class="progress-bar"
                                     cx="100"
@@ -278,7 +396,12 @@
                             <div class="text">Communication</div>
                         </div>
                         <div class="radial-bar">
-                            <svg class="radial-svg" x="0px" y="0px" viewBox="0 0 200 200">
+                            <svg
+                                class="radial-svg"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 0 200 200"
+                            >
                                 <circle
                                     class="progress-bar"
                                     cx="100"
@@ -296,7 +419,12 @@
                             <div class="text">Problem Solving</div>
                         </div>
                         <div class="radial-bar">
-                            <svg class="radial-svg" x="0px" y="0px" viewBox="0 0 200 200">
+                            <svg
+                                class="radial-svg"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 0 200 200"
+                            >
                                 <circle
                                     class="progress-bar"
                                     cx="100"
@@ -348,6 +476,7 @@
                         </div>
                     </div>
                 </div>
+            </section>
         </div>
 
         <script src="Script/index-script.js"></script>
