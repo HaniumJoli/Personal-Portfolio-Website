@@ -213,9 +213,6 @@ nav a {
     .navitem {
         margin-left: 20px;
     }
-    .home-content {
-        height: 100svh;
-    }
     .hideonmobile {
         display: none;
     }
