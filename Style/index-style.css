@@ -258,6 +258,8 @@ nav a {
     border: 1px solid aqua;
     opacity: 0;
     box-shadow: 0 0 20px aqua, 0 0 25px aqua, 0 0 30px aqua, 0 0 40px aqua;
+}
+#profile-pic.animate {
     -webkit-animation: slideUp 1s ease forwards;
     animation: slideUp 1s ease forwards;
     animation-delay: 1s;
@@ -297,6 +299,8 @@ nav a {
     font-size: 32px;
     font-weight: 700;
     opacity: 0;
+}
+.home-content h3.animate {
     -webkit-animation: slideDown 1s ease forwards;
     animation: slideDown 1s ease forwards;
     animation-delay: 0.3s;
@@ -307,6 +311,10 @@ nav a {
     font-size: 32px;
     font-weight: 700;
     opacity: 0;
+    
+}
+
+.home-content h3:nth-of-type(2).animate {
     -webkit-animation: slideUp 1s ease forwards;
     animation: slideUp 1s ease forwards;
     animation-delay: 0.3s;
@@ -317,6 +325,9 @@ nav a {
     font-weight: 700;
     margin: -3px 0;
     opacity: 0;
+}
+
+.home-content h1.animate {
     -webkit-animation: slideRight 1s ease forwards;
     animation: slideRight 1s ease forwards;
     animation-delay: 0.7s;
@@ -327,6 +338,8 @@ nav a {
     margin: 20px 0;
     line-height: 1.5;
     opacity: 0;
+}
+.home-content p.animate {
     -webkit-animation: slideLeft 1s ease forwards;
     animation: slideLeft 1s ease forwards;
     animation-delay: 0.7s;
@@ -351,15 +364,19 @@ nav a {
     -o-transition: 0.5s ease;
     transition: 0.5s ease;
     opacity: 0;
+}
+.home-sci a.animate {
     -webkit-animation: slideLeft 0.3s ease forwards;
     animation: slideLeft 0.3s ease forwards;
     animation-delay: calc(0.7s + 0.2s * var(--i));
 }
+
 .home-sci a:hover {
     background: aqua;
     color: #161718;
     box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 25px aqua;
 }
+
 .btn-box {
     text-align: center;
     display: inline-block;
@@ -378,13 +395,15 @@ nav a {
     -o-border-radius: 40px;
     border-radius: 40px;
     opacity: 0;
-    -webkit-animation: slideUp 0.5s ease forwards;
-    animation: slideUp 0.5s ease forwards;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     -ms-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+}
+.btn-box.animate {
+    -webkit-animation: slideUp 0.5s ease forwards;
+    animation: slideUp 0.5s ease forwards;
     animation-delay: 0.8s;
 }
 .btn-box:hover {
@@ -422,6 +441,8 @@ nav a {
     min-width: 300px;
     padding: 2rem;
     opacity: 0;
+}
+.about-img.animate {
     -webkit-animation: slideRight 1s ease forwards;
     animation: slideRight 1s ease forwards;
 }
@@ -447,6 +468,8 @@ nav a {
 .about-text h2 {
     font-size: 60px;
     opacity: 0;
+}
+.about-text h2.animate {
     -webkit-animation: slideLeft 1s ease forwards;
     animation: slideLeft 1s ease forwards;
     animation-delay: 0.3s;
@@ -461,6 +484,8 @@ nav a {
     color: #fff;
     margin: 15px 0 20px;
     opacity: 0;
+}
+.about-text h4.animate {
     -webkit-animation: slideLeft 1s ease forwards;
     animation: slideLeft 1s ease forwards;
     animation-delay: 0.5s;
@@ -471,6 +496,8 @@ nav a {
     line-height: 1.4;
     margin-bottom: 2rem;
     opacity: 0;
+}
+.about-text p.animate {
     -webkit-animation: slideLeft 1s ease forwards;
     animation: slideLeft 1s ease forwards;
     animation-delay: 0.7s;
@@ -488,7 +515,13 @@ nav a {
     text-align: center;
     font-size: 4rem;
     padding-bottom: 5rem;
+    opacity: 0;
 }
+.sub-title.animate {
+    -webkit-animation: slideUp 1s ease forwards;
+    animation: slideUp 1s ease forwards;
+}
+
 .sub-title span {
     color: aqua;
 }
@@ -518,16 +551,19 @@ nav a {
     border-radius: 20px;
     box-shadow: 1px 1px 20px aqua, 1px 1px 15px aqua, 1px 1px 20px aqua,
         1px 1px 25px aqua;
-    -webkit-animation: slideUp 0.5s ease forwards;
-    animation: slideUp 0.5s ease forwards;
+    
     opacity: 0;
-    animation-delay: calc(0.2s * var(--i));
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+.services-list div.animate {
+    -webkit-animation: slideUp 0.5s ease forwards;
+    animation: slideUp 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
 }
 
 .services-list div:hover {
@@ -556,6 +592,8 @@ nav a {
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     opacity: 0;
+}
+.read.animate {
     -webkit-animation: slideUp 0.5s ease forwards;
     animation: slideUp 0.5s ease forwards;
     animation-delay: 1s;
@@ -590,7 +628,13 @@ nav a {
     text-underline-position: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 1rem;
+    opacity: 0;
 }
+.heading1.animate {
+    -webkit-animation: slideUp .5s ease forwards;
+    animation: slideUp .5s ease forwards;
+}
+
 .bar {
     font-size: 23px;
 }
@@ -611,6 +655,8 @@ nav a {
     font-size: 17px;
     font-weight: 500;
     opacity: 0;
+}
+.technical-bars .bar .info .span.animate {
     -webkit-animation: showText 0.5s 1s linear forwards;
     animation: showText 0.5s 1s linear forwards;
 }
@@ -632,6 +678,8 @@ nav a {
     -ms-transform: scaleX(0);
     -o-transform: scaleX(0);
     transform: scaleX(0);
+}
+.technical-bars .bar .progress-line.animate {
     -webkit-animation: anim 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     animation: anim 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
@@ -651,6 +699,8 @@ nav a {
     -ms-transform: scaleX(0);
     -o-transform: scaleX(0);
     transform: scaleX(0);
+}
+.technical-bars .bar .progress-line span.animate {
     -webkit-animation: anim 1s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
     animation: anim 1s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
@@ -698,10 +748,13 @@ nav a {
     border-radius: 3px;
     top: -28px;
     right: -20px;
-    -webkit-animation: showText 0.5s 1.5s linear forwards;
-    animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
 }
+.progress-line span.animate::after {
+    -webkit-animation: showText 0.5s 1.5s linear forwards;
+    animation: showText 0.5s 1.5s linear forwards;
+}
+
 .progress-line.c span::after {
     content: "60%";
 }
@@ -725,8 +778,10 @@ nav a {
     border-top-color: black;
     top: -10px;
     right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
+}
+.progress-line span.animate::before {
+    animation: showText 0.5s 1.5s linear forwards;
 }
 @keyframes showText {
     0% {
@@ -769,6 +824,8 @@ nav a {
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
     stroke-linecap: round;
+}
+.progress-bar.animate {
     -webkit-animation: animate-bar 1s linear forwards;
     animation: animate-bar 1s linear forwards;
 }
@@ -784,22 +841,24 @@ nav a {
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
     stroke-linecap: round;
+}
+.path.animate {
     -webkit-animation: animate-bar 0.5s linear forwards;
     animation: animate-bar .s linear forwards;
 }
-.path-1 {
+.path-1.animate {
     animation: animate-path1 0.5s 0.7s linear forwards;
     -webkit-animation: animate-path1 0.5s 0.7s linear forwards;
 }
-.path-2 {
+.path-2.animate {
     animation: animate-path2 0.5s 0.7s linear forwards;
     -webkit-animation: animate-path2 0.5s 0.7s linear forwards;
 }
-.path-3 {
+.path-3.animate {
     animation: animate-path3.5s 0.7s linear forwards;
     -webkit-animation: animate-path3.5s 0.7s linear forwards;
 }
-.path-4 {
+.path-4.animate {
     animation: animate-path4 0.5s 0.7s linear forwards;
     -webkit-animation: animate-path4 0.5s 0.7s linear forwards;
 }
@@ -839,6 +898,10 @@ nav a {
     -webkit-animation: showText 1s 1s linear forwards;
     animation: showText 1s 1s linear forwards;
 }
+.radial-bar .percentage.animate {
+    -webkit-animation: showText 1s 1s linear forwards;
+    animation: showText 1s 1s linear forwards;
+}
 
 .radial-bar .text {
     width: 100%;
@@ -854,6 +917,9 @@ nav a {
     font-size: 17px;
     font-weight: 500;
     opacity: 0;
+}
+
+.radial-bar .text.animate {
     -webkit-animation: showText 1s 1s linear forwards;
     animation: showText 1s 1s linear forwards;
 }

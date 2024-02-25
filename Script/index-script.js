@@ -6,6 +6,18 @@ let typed=new Typed('.typed',{
     loop:true
 });
 
+const elements = document.querySelectorAll('*');
+const observer=new IntersectionObserver((entries,observer)=>{
+    entries.forEach(entry=>{
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+elements.forEach(element=>{
+    observer.observe(element);
+});
 showside = document.getElementById('showside');
 sidebar = document.querySelector('.sidebar');
 showside.addEventListener('click', () => {
