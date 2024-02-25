@@ -395,6 +395,7 @@ nav a {
     box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan, 0 0 20px cyan,
         0 0 30px cyan;
 }
+
 .typed {
     color: aqua;
 }
@@ -420,6 +421,9 @@ nav a {
     width: 40%;
     min-width: 300px;
     padding: 2rem;
+    opacity: 0;
+    -webkit-animation: slideRight 1s ease forwards;
+    animation: slideRight 1s ease forwards;
 }
 .about-img img {
     height: auto;
@@ -442,21 +446,34 @@ nav a {
 
 .about-text h2 {
     font-size: 60px;
+    opacity: 0;
+    -webkit-animation: slideLeft 1s ease forwards;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.3s;
 }
 .about-text h2 span {
     color: aqua;
 }
+
 .about-text h4 {
     font-size: 30px;
     font-weight: 600;
     color: #fff;
     margin: 15px 0 20px;
+    opacity: 0;
+    -webkit-animation: slideLeft 1s ease forwards;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.5s;
 }
 .about-text p {
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 2rem;
+    opacity: 0;
+    -webkit-animation: slideLeft 1s ease forwards;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.7s;
 }
 
 #services {
