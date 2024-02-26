@@ -399,7 +399,7 @@ section {
 }
 .about {
     /* width: 100%; */
-    margin-top: 4rem;
+    padding-top: 6rem;
     margin-bottom: 3rem;
     /* display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -762,6 +762,7 @@ section {
 .sub-title {
     text-align: center;
     font-size: 4rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
     opacity: 0;
 }
@@ -1478,7 +1479,7 @@ section {
     -o-border-radius: 0.5rem;
 }
 
-@media screen and (max-width: 958px) {
+@media screen and (max-width: 1010px) {
     .header {
         padding: 20px 10px;
     }
@@ -1532,7 +1533,7 @@ section {
     }
 }
 
-@media screen and (min-width: 958px) {
+@media screen and (min-width: 1010px) {
     #showside {
         display: none;
     }
@@ -1556,7 +1557,7 @@ section {
         font-size: 1.5rem;
     }
     .profile-photo {
-        width: 100px;
+        width: 150px;
         padding: 1rem;
     }
 
