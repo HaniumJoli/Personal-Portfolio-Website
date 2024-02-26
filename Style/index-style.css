@@ -951,7 +951,7 @@ section {
 
 .technical-bars .bar .progress-line span {
     height: 100%;
-    background: linear-gradient(90deg, red, yellow, #00f260);
+    background: linear-gradient(90deg, #231fb6, #a3a3a3);
     position: absolute;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
