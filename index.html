@@ -136,6 +136,7 @@
                 </ul>
             </nav>
         </header>
+        <div class="placeholder"></div>
         <div class="wrapper">
             <section class="container-profile">
                 <div class="profile-photo">
@@ -159,7 +160,7 @@
                                 ><i class="bx bxl-facebook-circle bx-md"></i
                             ></a>
                             <a href="#" style="--i: 2"
-                                ><i class="bx bxl-whatsapp bx-md"></i
+                                ><i class="bx bxl-github bx-md"></i
                             ></a>
                             <a href="#" style="--i: 3" style="--i: 2"
                                 ><i class="bx bxl-linkedin-square bx-md"></i
@@ -302,29 +303,32 @@
                     <div class="technical-bars">
                         <div class="bar">
                             <i
-                                class="bx bx-code-curly"
-                                style="color: #19ccbc"
+                                class="bx bxl-c-plus-plus"
+                                style="color: brown"
                             ></i>
                             <div class="info">
-                                <span>C</span>
+                                <span>C/C++</span>
                             </div>
                             <div class="progress-line c">
                                 <span></span>
                             </div>
                         </div>
                         <div class="bar">
-                            <i class="bx bx-code" style="color: #19ccbc"></i>
+                            <i
+                                class="bx bxl-javascript"
+                                style="color: yellow"
+                            ></i>
                             <div class="info">
-                                <span>C++</span>
+                                <span>JavaScript</span>
                             </div>
                             <div class="progress-line cpp">
                                 <span></span>
                             </div>
                         </div>
                         <div class="bar">
-                            <i class="bx bxl-java" style="color: #19ccbc"></i>
+                            <i class="bx bxl-java" style="color: burlywood"></i>
                             <div class="info">
-                                <span>Java</span>
+                                <span>Java/Kotlin</span>
                             </div>
                             <div class="progress-line java">
                                 <span></span>
@@ -332,11 +336,11 @@
                         </div>
                         <div class="bar">
                             <i
-                                class="bx bx-code-block"
-                                style="color: #c419cc"
+                                class="bx bxl-python"
+                                style="color: cornflowerblue"
                             ></i>
                             <div class="info">
-                                <span>Kotlin</span>
+                                <span>Python</span>
                             </div>
                             <div class="progress-line klt">
                                 <span></span>
@@ -354,6 +358,23 @@
                                 y="0px"
                                 viewBox="0 0 200 200"
                             >
+                                <lineargradient
+                                    id="gradient"
+                                    gradientUnits="userSpaceOnUse"
+                                    x1="100"
+                                    y1="0"
+                                    x2="100"
+                                    y2="200"
+                                >
+                                    <stop
+                                        offset="0"
+                                        style="stop-color: #231fb6"
+                                    ></stop>
+                                    <stop
+                                        offset="1"
+                                        style="stop-color: #1faeb6"
+                                    ></stop>
+                                </lineargradient>
                                 <circle
                                     class="progress-bar"
                                     cx="100"
@@ -442,41 +463,156 @@
                     </div>
                 </div>
             </section>
-            <h1 class="sub-title">My <span>Portfolio</span></h1>
+            <h1 class="sub-title">My <span>Projects</span></h1>
             <section class="portfolio" id="portfolio">
                 <div class="portfolio-container">
-                    <div class="portfolio-box">
-                        <img src="/image/1.jpg" alt="portfolio" />
-                        <div class="portfolio-info">
-                            <h3>Android App</h3>
-                            <p>Android Application Development</p>
+                    <div class="portfolio-item" style="--i: 1">
+                        <div class="item-type">
+                            <i
+                                class="bx bxl-c-plus-plus"
+                                style="color: tomato"
+                            ></i>
+                            <img src="image/cli.jpg" alt="console app" />
+                        </div>
+                        <div class="item-info">
+                            <h3>
+                                <i class="bx bxl-c-plus-plus"></i>Information
+                                Manager
+                            </h3>
+                            <p>
+                                A C++ console application for managing and
+                                storing various information according to the
+                                user's needs.
+                            </p>
+                            <a href="#"
+                                ><i class="bx bxl-github"></i>GitHub Link</a
+                            >
                         </div>
                     </div>
-                    <div class="portfolio-box">
-                        <img src="/image/2.jpg" alt="portfolio" />
-                        <div class="portfolio-info">
-                            <h3>Web App</h3>
-                            <p>Web Application Development</p>
+                    <div class="portfolio-item" style="--i: 2">
+                        <div class="item-type">
+                            <i
+                                class="bx bxl-android"
+                                style="color: greenyellow"
+                            ></i>
+                            <img src="image/app-store.jpg" alt="android app" />
+                        </div>
+                        <div class="item-info">
+                            <h3><i class="bx bxl-android"></i>JollyRead</h3>
+                            <p>
+                                A book reading android app with many features
+                                such as library manager, information parsing and
+                                an intuiitive reading UI.
+                            </p>
+                            <a href="#"
+                                ><i class="bx bxl-github"></i>GitHub Link</a
+                            >
                         </div>
                     </div>
-                    <div class="portfolio-box">
-                        <img src="/image/3.jpg" alt="portfolio" />
-                        <div class="portfolio-info">
-                            <h3>Boho Art</h3>
-                            <p>Drawing</p>
+                    <div class="portfolio-item" style="--i: 3">
+                        <div class="item-type">
+                            <i
+                                class="bx bx-palette"
+                                style="color: chocolate"
+                            ></i>
+                            <img src="image/boho.jpg" alt="boho art" />
                         </div>
-                    </div>
-                    <div class="portfolio-box">
-                        <img src="/image/4.jpg" alt="portfolio" />
-                        <div class="portfolio-info">
-                            <h3>Textile Art</h3>
-                            <p>Textile Art</p>
+                        <div class="item-info">
+                            <h3><i class="bx bx-palette"></i>Boho art</h3>
+                            <p>
+                                A collection of artworks illustrating my
+                                philosophy, worldview and personal aesthetic
+                                preferences.
+                            </p>
+                            <a href="#"
+                                ><i class="bx bx-paint"></i>Sample Link</a
+                            >
                         </div>
                     </div>
                 </div>
             </section>
+            <h1 class="sub-title">Contact <span>Me</span></h1>
+            <section class="contact" id="contact">
+                <!-- <p>
+                    I am available for freelance work. Connect with me for any
+                    project or collaboration.
+                </p> -->
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-box" id="location" style="--i: 1">
+                            <div class="contact-icon">
+                                <i class="bx bx-map bx-md"></i>
+                            </div>
+                            <div class="contact-text">
+                                <p>KUET, Khulna 9203, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="contact-box" id="phone" style="--i: 2">
+                            <div class="contact-icon">
+                                <i class="bx bx-phone-call bx-md"></i>
+                            </div>
+                            <div class="contact-text">
+                                <ul>
+                                    <li>+880-1952-347-593</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact-box" id="email" style="--i: 3">
+                            <div class="contact-icon">
+                                <i class="bx bx-envelope bx-md"></i>
+                            </div>
+                            <div class="contact-text">
+                                <ul class="mail-list">
+                                    <li>haniumjoli1015@gmail.com</li>
+                                    <li>joli2007113@stud.kuet.ac.bd</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact-box" id="whatsapp" style="--i: 4">
+                            <div class="contact-icon">
+                                <i class="bx bxl-whatsapp bx-md"></i>
+                            </div>
+                            <div class="contact-text">
+                                <ul class="whatsapp-list">
+                                    <li>+880-1952-347-593</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact-box" id="telegram" style="--i: 5">
+                            <div class="contact-icon">
+                                <i class="bx bxl-telegram bx-md"></i>
+                            </div>
+                            <div class="contact-text">
+                                <ul class="whatsapp-list">
+                                    <li>+880-1952-347-593</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h2>Send a Message</h2>
+                        <form action="">
+                            <div class="input-box">
+                                <input type="text" placeholder="Name" id="nametext"/>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" placeholder="Email" id="emailtext"/>
+                            </div>
+                            <div class="input-box">
+                                <textarea
+                                    name="message"
+                                    id="messagetext"
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Message"
+                                ></textarea>
+                            </div>
+                            <input type="submit" value="Send" class="btn-box" />
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
-
         <script src="Script/index-script.js"></script>
     </body>
 </html>
