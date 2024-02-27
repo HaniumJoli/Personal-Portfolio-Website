@@ -1199,6 +1199,7 @@ section {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 1.2rem;
+    width: 100%;
     font-weight: 500;
     opacity: 0;
     -webkit-animation: showText 1s 1s linear forwards;
