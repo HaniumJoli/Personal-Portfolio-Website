@@ -32,10 +32,22 @@ hideside.addEventListener("click", () => {
     closeSideBar();
 });
 
+let active = document.querySelector(".timeline-read.active");
+
 document.addEventListener("click", (e) => {
     if (!sidebar.contains(e.target) && !showside.contains(e.target)) {
         closeSideBar();
     }
+});
+
+document.addEventListener("scroll", () => {
+    closeSideBar();
+});
+
+document.querySelectorAll(".sidebar a").forEach((element) => {
+    element.addEventListener("click", () => {
+        closeSideBar();
+    });
 });
 
 function openSideBar() {
@@ -51,3 +63,16 @@ function closeSideBar() {
         sidebar.style.display = "none";
     }, 500);
 }
+
+document.querySelectorAll(".timeline-read").forEach((element) => {
+    element.addEventListener("click", () => {
+        if (element.classList.contains("active")) {
+            element.classList.remove("active");
+            return;
+        }
+        active = document.querySelector(".timeline-read.active");
+        if(active) active.classList.remove("active");
+        // document.querySelector(".timeline-read.active").classList.remove("active");
+        element.classList.add("active");
+    });
+});

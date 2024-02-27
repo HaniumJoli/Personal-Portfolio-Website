@@ -108,6 +108,11 @@ nav a {
     font-weight: 500;
 }
 
+nav a:hover {
+    color: aqua;
+    /* text-decoration: underline; */
+}
+
 .nav-menu .navitem {
     opacity: 0;
     -webkit-animation: slideDown 0.5s ease forwards;
@@ -117,10 +122,6 @@ nav a {
 
 #showside svg:active {
     transform: scale(0.9);
-}
-
-.navitem:hover {
-    color: aqua;
 }
 
 .sidebar {
@@ -210,9 +211,9 @@ nav a {
     }
 }
 
-.sidebar a:hover {
+/* .sidebar a:hover {
     color: aqua;
-}
+} */
 
 section {
     padding: 0 1rem;
@@ -535,7 +536,7 @@ section {
 
 .timeline-container ul li {
     width: 50%;
-    padding: 1rem 1.25rem;
+    padding: 1rem;
     margin-bottom: 2rem;
     background-color: #113956;
     border-radius: 1rem;
@@ -555,14 +556,16 @@ section {
     color: turquoise;
 }
 
-.timeline-container ul li p {
+.timeline-text {
+    font-weight: 800;
     font-size: 1.2rem;
     line-height: 1.4;
     color: antiquewhite;
     margin-bottom: 1rem;
 }
 
-.timeline-container ul li a {
+.timeline-read {
+    cursor: pointer;
     text-align: center;
     width: 8rem;
     color: aqua;
@@ -582,9 +585,17 @@ section {
     transition: 0.3s ease-in-out;
 }
 
-.timeline-container ul li a:hover {
-    color: #081b29;
+.timeline-read::after {
+    content: "Read More";
+}
+
+.timeline-read.active::after {
+    content: "Read Less";
+}
+
+.timeline-read:hover {
     background-color: aqua;
+    color: #081b29;
 }
 
 .timeline-circle {
@@ -640,6 +651,44 @@ section {
     transform: translate(-50%, -50%);
 }
 
+.timeline-more {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    /* padding: 0.5rem; */
+    font-weight: 600;
+    transition: height 0.3s ease-in-out;
+    -webkit-transition: height 0.3s ease-in-out;
+    -moz-transition: height 0.3s ease-in-out;
+    -ms-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    height: 0;
+    overflow: hidden;
+}
+
+.timeline-container ul li:has(.active) .timeline-more {
+    height: 5rem;
+}
+
+/* .timeline-read.active + .timeline-more {
+    height: auto;
+} */
+
+.degree {
+    font-size: 1.2rem;
+    color: aqua;
+    font-weight: 800;
+}
+
+.emphasize {
+    font-size: 1.2rem;
+    color: aqua;
+    font-weight: 600;
+}
+
+.timeline-container ul a.active + .timeline-more {
+    height: auto;
+}
+
 .timeline-date {
     display: flex;
     justify-content: center;
@@ -670,16 +719,12 @@ section {
     text-align: right;
     align-self: flex-end;
     align-items: flex-end;
-    /* opacity: 0; */
     transform-origin: 100% 50%;
     transform: translateX(-2rem);
     -webkit-transform: translateX(-2rem);
     -moz-transform: translateX(-2rem);
     -ms-transform: translateX(-2rem);
     -o-transform: translateX(-2rem);
-    /* & a {
-        text-align: right;
-    } */
     & .timeline-date {
         right: 1rem;
     }
@@ -746,10 +791,6 @@ section {
         -o-transform: translateX(2rem);
     }
 }
-
-/* .timeline-container ul li:nth-child(odd) .date {
-    float: left;
-} */
 
 #services {
     width: 100%;
