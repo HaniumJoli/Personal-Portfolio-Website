@@ -1212,10 +1212,11 @@ section {
 }
 
 .radial-bar .text {
+    margin-top: 0.5rem;
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: -5px;
+    bottom: -0.5rem;
     left: 50%;
     -webkit-transform: translateX(-50px);
     -moz-transform: translateX(-50px);
