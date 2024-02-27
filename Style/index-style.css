@@ -694,7 +694,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 4rem;
+    padding: 0 0.5rem;
     height: 2rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -1556,6 +1556,7 @@ section {
         align-items: flex-start;
         text-align: left;
         & .timeline-date {
+            right: auto;
             left: 1rem;
         }
         & .timeline-circle {
