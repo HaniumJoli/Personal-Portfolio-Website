@@ -29,27 +29,16 @@ body {
 }
 
 .header {
-    /* height: 5rem; */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 0.5rem 1rem;
     background: #06263b;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     z-index: 100;
 }
 
-/* .header::before {
-    position: absolute;
-    padding-bottom: 55%;
-    z-index: 1;
-} */
-
 .logo {
-    /* position: relative; */
     font-size: 2rem;
     color: white;
     cursor: default;
@@ -61,7 +50,6 @@ body {
 }
 
 nav ul {
-    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -266,17 +254,9 @@ section {
 .home {
     position: relative;
     width: 600px;
-    /* min-width: 400px; */
-    /* justify-content: space-between; */
     padding: 0 1rem;
-    /* background: url(prof.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    */
     display: flex;
     align-items: center;
-    /* -webkit-animation: slideRight 1s ease forwards;
-    animation: slideRight 1s ease forwards; */
 }
 .home-content {
     max-width: 600px;
@@ -321,6 +301,7 @@ section {
     line-height: 1.5;
     opacity: 0;
 }
+
 .home-content p.animate {
     -webkit-animation: slideLeft 1s ease forwards;
     animation: slideLeft 1s ease forwards;
@@ -336,10 +317,8 @@ section {
     background: transparent;
     border: 2px solid aqua;
     border-radius: 50%;
-    /* font-size: 20px; */
     color: aqua;
     text-decoration: none;
-
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
     -ms-transition: 0.5s ease;
@@ -356,17 +335,17 @@ section {
 .home-sci a:hover {
     background: aqua;
     color: #161718;
-    box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 25px aqua;
+    /* box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua, 0 0 25px aqua; */
 }
 
 .btn-box {
     text-align: center;
     display: inline-block;
     padding: 12px 28px;
-    border: 2px solid aqua;
-    background: aqua;
+    border: 3px solid aqua;
+    /* background: aqua; */
     font-size: 16px;
-    color: #182b64;
+    color: aqua;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
@@ -389,14 +368,39 @@ section {
     animation-delay: 0.8s;
 }
 .btn-box:hover {
-    background: transparent;
-    color: aqua;
-    box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan, 0 0 20px cyan,
-        0 0 30px cyan;
+    background: aqua;
+    color: #182b64;
+    /* box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15px cyan, 0 0 20px cyan,
+        0 0 30px cyan; */
 }
 
 .typed {
     color: aqua;
+}
+
+.cursor {
+    font-size: 1.2em;
+    color: white;
+    /* opacity: 0; */
+    /* animation: blinking 0.5s 1.5s infinite;
+    -webkit-animation: blinking 0.5s 1.5s infinite; */
+}
+
+.blinking {
+    animation: blink 0.5s infinite;
+    -webkit-animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .about {
     /* width: 100%; */
@@ -538,7 +542,8 @@ section {
     width: 50%;
     padding: 1rem;
     margin-bottom: 2rem;
-    background-color: #113956;
+    /* background-color: #113956; */
+    background-color: rgba(255, 255, 255, 0.05);
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
@@ -827,19 +832,21 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* grid-template-rows: repeat(auto-fit, minmax(300px, 1fr)); */
-    grid-gap: 3rem;
+    grid-gap: 1.5rem;
 }
 
 .services-list div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3px;
+    /* position: relative; */
     /* background-color: transparent; */
-    padding: 2.75rem;
+    background-color: rgba(255, 255, 255, 0.15);
     font-size: 0.9rem;
     font-weight: 13px;
-    border-color: aqua;
-    border: 5px solid aqua;
+    /* border-color: aqua; */
+    /* border: 3px solid rgba(255, 255, 255, 0.2); */
     border-radius: 20px;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
@@ -849,25 +856,72 @@ section {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
+.services-list div.content {
+    border-radius: inherit;
+    background: #081c29;
+    width: 100%;
+    height: 100%;
+    padding: 2.75rem;
+    position: relative;
+    z-index: 2;
+    /* margin: 3px 3px; */
+}
+
+.services-list div::before,
+.services-list div .card-border {
+    pointer-events: none;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.services-list div::before {
+    background: radial-gradient(
+        70rem circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.06),
+        transparent 40%
+    );
+    z-index: 3;
+}
+
+.services-list div .card-border {
+    background: radial-gradient(
+        35rem circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.3),
+        transparent 40%
+    );
+    z-index: 1;
+}
+
 .services-list div.animate {
     -webkit-animation: slideUp 0.5s ease forwards;
     animation: slideUp 0.5s ease forwards;
     animation-delay: calc(0.2s * var(--i));
 }
 
-.services-list div:hover {
-    box-shadow: 1px 1px 20px aqua, 1px 1px 15px aqua, 1px 1px 20px aqua,
-        1px 1px 25px aqua;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
+.services-list div:hover::before,
+.services-list div:hover .card-border {
+    opacity: 1;
 }
-
 .services-list div i {
     position: absolute;
-    top: -10px;
+    top: -2px;
     background: aqua;
     padding: 0.25rem;
     border-radius: 50%;
@@ -887,8 +941,9 @@ section {
     padding: 10px 20px;
     margin-top: auto;
     text-align: center;
-    background-color: aqua;
-    color: #081b29;
+    background-color: transparent;
+    color: aqua;
+    border: 2px solid aqua;
     text-decoration: none;
     font-weight: 600;
     border-radius: 40px;
@@ -898,6 +953,8 @@ section {
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     opacity: 0;
+    position: relative;
+    z-index: 2;
 }
 .read.animate {
     -webkit-animation: slideUp 0.5s ease forwards;
@@ -910,7 +967,8 @@ section {
 }
 
 .services-list .read:hover {
-    box-shadow: 0 0 10px aqua, 0 0 15px aqua, 0 0 20px aqua, 0 0 30px aqua;
+    background-color: aqua;
+    color: #081b29;
 }
 
 #skills {
@@ -1516,12 +1574,17 @@ section {
     width: 100%;
     padding: 0.5rem;
     margin: 0.5rem 0;
-    border: none;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
     border-radius: 0.5rem;
+}
+
+.form-btn {
+    width: 4rem;
+    background: #06263b;
+    border: 2px solid aqua;
 }
 
 @media screen and (max-width: 1010px) {
